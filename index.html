@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>WEB PORTOFOLIO KU</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#profil">PROFIL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <h2>Selamat Datang di Web Portofolio Saya</h2>
+            <p>
+                Halo, saya Aldeva Rizky Winanto Pratama Putra, seorang Mahasiswa Teknik Informatika yang memiliki minat besar di bidang Web Development maupun Mobile Development. 
+                Website ini adalah tempat saya berbagi tentang diri saya, perjalanan pendidikan, serta karya-karya yang telah saya buat.
+            </p>
+            <p>
+                Mari jelajahi lebih lanjut untuk mengenal saya dan karya-karya saya. Jangan ragu untuk menghubungi saya jika ada pertanyaan atau kolaborasi yang ingin dibahas.
+            </p>
+        </section>
+
+        <!-- Tentang Aku Section -->
+        <section class="about" id="profil">
+            <h2>TENTANG AKU</h2>
+            <p>
+                Saya adalah seseorang yang berdedikasi di bidang Web Development, dengan pengalaman lebih dari 3 tahun. 
+                Saya percaya pada pentingnya inovasi, kerja keras, dan belajar tanpa henti. Berikut adalah sedikit perjalanan pendidikan saya:
+            </p>
+        </section>
+
+        <!-- Pendidikan Section -->
+        <section class="education" id="education">
+            <div class="card" onclick="showMessage('SD')">
+                <h3>SD</h3>
+            </div>
+            <div class="card" onclick="showMessage('SMP')">
+                <h3>SMP</h3>
+            </div>
+            <div class="card" onclick="showMessage('SMA')">
+                <h3>SMA</h3>
+            </div>
+            <div class="card" onclick="showMessage('S1')">
+                <h3>S1</h3>
+            </div>
+            <p id="education-message">
+                Klik salah satu kartu untuk melihat detail pendidikan.
+            </p>
+        </section>
+
+        <!-- Kontak Section -->
+        <section class="contact" id="contact">
+            <h2>Hubungi Saya</h2>
+            <p>
+                Saya selalu terbuka untuk berdiskusi mengenai peluang kerja, kolaborasi, atau hanya berbagi pengalaman. 
+                Anda dapat menghubungi saya melalui detail berikut:
+            </p>
+            <ul>
+                <li><strong>Email:</strong> devarizky99@gmail.com</li>
+                <li><strong>Telepon:</strong> +62 812 3456 7890</li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aldevarizky" target="_blank">linkedin.com/in/aldevarizky</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/aldevarizky" target="_blank">github.com/aldevarizky</a></li>
+            </ul>
+            <p>Atau kirimkan pesan langsung melalui form di bawah ini:</p>
+            <form id="contact-form">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required><br>
+                
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea><br>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Portfolio Ku</p>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
